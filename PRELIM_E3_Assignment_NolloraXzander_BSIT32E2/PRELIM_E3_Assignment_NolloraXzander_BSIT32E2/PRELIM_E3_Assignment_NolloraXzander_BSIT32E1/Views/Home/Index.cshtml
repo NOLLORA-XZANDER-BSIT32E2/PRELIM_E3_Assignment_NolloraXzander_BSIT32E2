@@ -1,0 +1,35 @@
+﻿@model PRELIM_E3_Assignment_NolloraXzander_BSIT32E1.Models.Info
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My ASP.NET Core MVC Application</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <section id="profile">
+        <div class="section-pic">
+            <img src="~/Images/pic.jpg" alt="My Picture">
+        </div>
+        <div class="section_text">
+              <p class="section-p1">
+                Hello, I'm</p>
+            <h1 class="title">@Model.Name</h1>
+            <p class="section-p2">
+                @Model.Course-@Model.Section
+            </p>
+            <div class="btn-container">
+                <a href="@Url.Action("Schedule", "Home")" class="btn btn-primary">My Schedule</a>
+            </div>
+     
+            <div id="social-container">
+             <img src="~/Images/github.png" alt="My Github Account" class="Icon" onclick="redirectToGithub()" />
+             <img src="~/Images/facebook.png" alt="My Facebook Account" class="Icon" onclick="redirectToFacebook()" />
+            </div>
+        </div>
+    </section>
+
+    <script src="~/js/site.js"></script>
+</body>
+</html>
+
