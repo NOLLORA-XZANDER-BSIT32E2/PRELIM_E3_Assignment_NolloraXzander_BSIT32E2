@@ -148,7 +148,7 @@ section {
 .container-image {
     position: relative;
     top: 4vh;
-    right: 7vh;
+    left: 17vh;
     border-radius: 0;
     height: 80vh;
     width: 140vh;
